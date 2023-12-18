@@ -62,7 +62,7 @@ def collision(indices: np.ndarray,
     indices : ndarray
         The array of indices of the colliding particles.
     distances : ndarray
-        The
+        The distances between the colliding particles.
     position : ndarray
         The array containing the xy coordinate pairs of each colliding particle.
     velocity : ndarray
@@ -102,7 +102,7 @@ def update(position: np.ndarray,
     
     Returns
     -------
-    ndarray
+    position : ndarray
         The array of updated positions for each particle.
     """
     position += delta_time*velocity
