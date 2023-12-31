@@ -81,7 +81,7 @@ def update(position: np.ndarray,
            delta_time: float,
            maxes: tuple, 
            radius: float
-           ) -> tuple:
+           ) -> np.ndarray:
     """
     Updates the positions and velocities of the particles each frame.
     
