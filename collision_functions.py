@@ -40,9 +40,7 @@ def animate(frame: int,
     im : PathCollection
         The next frame of the animation.
     """
-    # Looping for animation smoothness
-    for _ in range(2):
-        position = update(position, velocity, delta_time, maxes, radius)
+    position = update(position, velocity, delta_time, maxes, radius)
     im.set_offsets(position)
     return im, 
 
